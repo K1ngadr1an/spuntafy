@@ -15,12 +15,13 @@ class App {
         id: "1",
         titolo: "boh",
         autore: "boh",
+        album: "boh",
         genere: "boh",
         anno: "boh",
         durata: "boh",
         idArtista: "boh",
         idAlbum: "boh",
-        idPlaylist: "boh",
+        idPlaylist: "boh"
       },
     ];
     this.artisti = [
@@ -38,6 +39,7 @@ class App {
         genere: "boh",
         anno: "boh",
         idArtista: "boh",
+        idAutore: "boh",
       },
     ];
     this.playlist = [
@@ -48,6 +50,7 @@ class App {
         idUser: "boh",
       },
     ];
+
     // this.chats = [];
     // this.messages = [];
   }
@@ -69,16 +72,19 @@ class Canzone {
     id,
     titolo,
     autore,
+    album,
     genere,
     anno,
     durata,
     idArtista,
     idAlbum,
     idPlaylist
+    idAlbum
   ) {
     this.id = id;
     this.titolo = titolo;
     this.autore = autore;
+    this.album = album;
     this.genere = genere;
     this.anno = anno;
     this.durata = durata;
@@ -98,12 +104,14 @@ class Artista {
 
 class Album {
   constructor(id, titolo, autore, genere, anno, idArtista) {
+  constructor(id, titolo, autore, genere, anno, idAutore) {
     this.id = id;
     this.titolo = titolo;
     this.autore = autore;
     this.genere = genere;
     this.anno = anno;
     this.idArtista = idArtista;
+    this.idAutore = idAutore
   }
 }
 
