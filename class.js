@@ -21,7 +21,7 @@ class App {
         durata: "boh",
         idArtista: "boh",
         idAlbum: "boh",
-        idPlaylist: "boh"
+        idPlaylist: "boh",
       },
     ];
     this.artisti = [
@@ -79,7 +79,6 @@ class Canzone {
     idArtista,
     idAlbum,
     idPlaylist
-    idAlbum
   ) {
     this.id = id;
     this.titolo = titolo;
@@ -103,15 +102,14 @@ class Artista {
 }
 
 class Album {
-  constructor(id, titolo, autore, genere, anno, idArtista) {
-  constructor(id, titolo, autore, genere, anno, idAutore) {
+  constructor(id, titolo, autore, genere, anno, idArtista, idAutore) {
     this.id = id;
     this.titolo = titolo;
     this.autore = autore;
     this.genere = genere;
     this.anno = anno;
     this.idArtista = idArtista;
-    this.idAutore = idAutore
+    this.idAutore = idAutore;
   }
 }
 
