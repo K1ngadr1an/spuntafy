@@ -21,6 +21,7 @@ class App {
         durata: "boh",
         idArtista: "boh",
         idAlbum: "boh",
+        idPlaylist: "boh"
       },
     ];
     this.artisti = [
@@ -37,6 +38,7 @@ class App {
         autore: "boh",
         genere: "boh",
         anno: "boh",
+        idArtista: "boh",
         idAutore: "boh",
       },
     ];
@@ -48,6 +50,9 @@ class App {
         idUser: "boh",
       },
     ];
+
+    // this.chats = [];
+    // this.messages = [];
   }
 }
 
@@ -72,6 +77,8 @@ class Canzone {
     anno,
     durata,
     idArtista,
+    idAlbum,
+    idPlaylist
     idAlbum
   ) {
     this.id = id;
@@ -83,6 +90,7 @@ class Canzone {
     this.durata = durata;
     this.idArtista = idArtista;
     this.idAlbum = idAlbum;
+    this.idPlaylist = idPlaylist;
   }
 }
 
@@ -95,13 +103,15 @@ class Artista {
 }
 
 class Album {
+  constructor(id, titolo, autore, genere, anno, idArtista) {
   constructor(id, titolo, autore, genere, anno, idAutore) {
     this.id = id;
     this.titolo = titolo;
     this.autore = autore;
     this.genere = genere;
     this.anno = anno;
-    this.idAutore = idAutore;
+    this.idArtista = idArtista;
+    this.idAutore = idAutore
   }
 }
 
