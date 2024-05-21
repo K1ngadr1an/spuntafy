@@ -1,5 +1,5 @@
 class Canzone {
-  constructor(titolo, autore, album, genere, anno, durata) {
+  constructor(titolo, autore, genere, anno, durata) {
     this.id = math.random();
     this.titolo = titolo;
     this.autore = autore;

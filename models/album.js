@@ -1,11 +1,11 @@
-class Album {
-  constructor(id, titolo, autore, genere, anno) {
+class album {
+  constructor(titolo, autore, genere, anno, canzoni) {
     this.id = Math.random();
     this.titolo = titolo;
     this.autore = autore;
     this.genere = genere;
     this.anno = anno;
-    this.idArtista = Math.random();
-    this.idAutore = Math.random();
+    this.canzoni = canzoni;
   }
 }
+module.exports = album;

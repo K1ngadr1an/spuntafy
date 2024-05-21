@@ -5,3 +5,4 @@ class Artista {
     this.cognome = cognome;
   }
 }
+module.exports = Artista;
