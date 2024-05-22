@@ -1,14 +1,10 @@
-class Playlists {
-  playlists = [];
+const ModelPlaylist = require("../models/playlist");
+class ControllerPlaylists {
+  #playlists = [];
   create(titolo, autore, canzoni) {
-    const Playlist = {
-      id: math.random(),
-      titolo: titolo,
-      autore: autore,
-      canzoni: canzoni,
-    };
-    this.Playlists.push(Playlist);
+    const Playlist = new Playlist(titolo, autore, canzoni);
+    this.#playlists.push(Playlist);
     return Playlist;
   }
 }
-module.exports = Playlists;
+module.exports = ControllerPlaylists;
