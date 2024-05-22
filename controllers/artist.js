@@ -1,14 +1,10 @@
-class artisti {
-  artisti = [];
+const ModelArtist = require("../models/artist");
+class Controllerartists {
+  #artisti = [];
   create(nome, cognome) {
-    const artisti = {
-      id: math.random(),
-      nome: nome,
-      cognome: cognome,
-    };
-
-    this.artisti.push(artisti);
+    const artisti = new ModelArtisti(nome, cognome);
+    this.#artisti.push(artisti);
     return artisti;
   }
 }
-module.exports = artisti;
+module.exports = Controllerartists;

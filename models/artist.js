@@ -1,8 +1,8 @@
-class Artista {
+class ModelArtist {
   constructor(nome, cognome) {
-    this.id = math.random();
+    this.id = Math.random();
     this.nome = nome;
     this.cognome = cognome;
   }
 }
-module.exports = Artista;
+module.exports = ModelArtist;

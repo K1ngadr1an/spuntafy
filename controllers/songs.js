@@ -1,5 +1,4 @@
 const Modelsong = require("../models/song");
-
 class ControllerSongs {
   #songs = [];
   create(titolo, autore, genere, anno, durata) {
