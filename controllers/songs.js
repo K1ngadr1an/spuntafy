@@ -1,16 +1,11 @@
-class songs {
-  songs = [];
+const Modelsong = require("../models/song");
+
+class ControllerSongs {
+  #songs = [];
   create(titolo, autore, genere, anno, durata) {
-    const song = {
-      id: Math.random(),
-      titolo: titolo,
-      autore: autore,
-      genere: genere,
-      anno: anno,
-      durata: durata,
-    };
-    this.songs.push(song);
+    const song = new ModelSong(titolo, autore, genere, anno, durata);
+    this.#songs.push(song);
     return song;
   }
 }
-module.exports = songs;
+module.exports = ControllerSongs;
