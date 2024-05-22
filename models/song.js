@@ -1,6 +1,6 @@
-class Canzone {
+class ModelSong {
   constructor(titolo, autore, genere, anno, durata) {
-    this.id = math.random();
+    this.id = Math.random();
     this.titolo = titolo;
     this.autore = autore;
     this.album = album;
@@ -9,3 +9,4 @@ class Canzone {
     this.durata = durata;
   }
 }
+module.exports = ModelSong;
