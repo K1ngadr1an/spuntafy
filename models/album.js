@@ -1,4 +1,4 @@
-class album {
+class ModelAlbum {
   constructor(titolo, autore, genere, anno, canzoni) {
     this.id = Math.random();
     this.titolo = titolo;
@@ -8,4 +8,4 @@ class album {
     this.canzoni = canzoni;
   }
 }
-module.exports = album;
+module.exports = ModelAlbum;
