@@ -6,5 +6,11 @@ class ControllerAlbums {
     this.#albums.push(album);
     return album;
   }
+  readBy(key, value) {
+    return this.#albums.filter(function (album) {
+      return album[key] === value;
+    });
+  }
 }
+
 module.exports = ControllerAlbums;
