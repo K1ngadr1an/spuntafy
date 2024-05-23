@@ -1,8 +1,8 @@
 class ModelPlaylist {
-  constructor(titolo, autore, canzoni) {
+  constructor(titolo, canzoni, iduser) {
     this.id = Math.random();
     this.titolo = titolo;
-    this.autore = autore;
+    this.iduser = iduser;
     this.canzoni = canzoni;
   }
 }

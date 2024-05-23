@@ -3,7 +3,6 @@ class ModelSong {
     this.id = Math.random();
     this.titolo = titolo;
     this.autore = autore;
-    this.album = album;
     this.genere = genere;
     this.anno = anno;
     this.durata = durata;
